@@ -1,15 +1,7 @@
 .ul-projects {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
 }
 
 .li-projects {
-  margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc((100% - 90px) / 3);
-
   background: #ffffff;
 }
 
@@ -74,7 +66,7 @@
   margin-bottom: 4px;
 
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 2;
   letter-spacing: 0.06em;
 
@@ -83,5 +75,40 @@
     line-height: 1.87;
 
     color: var(--features-text-team-position-portfolio-projects-text);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .li-projects:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .ul-projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+
+  .li-projects {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .ul-projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .li-projects {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 90px) / 3);
   }
 }

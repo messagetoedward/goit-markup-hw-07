@@ -1,10 +1,10 @@
 .filter-margin {
-  margin-bottom: 50px;
+  margin-bottom: 39px;
 }
 
 .filter-conteiner {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 
   margin-top: -8px;
   margin-left: -8px;
@@ -38,5 +38,21 @@
     color: var(--portfolio-button-hover-focus-color);
     background-color: var(--portfolio-button-background-color-hover);
     cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter-margin {
+    margin-bottom: 30px;
+  }
+  .filter-conteiner {
+    flex-wrap: unset;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-margin {
+    margin-bottom: 50px;
   }
 }

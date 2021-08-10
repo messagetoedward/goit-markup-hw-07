@@ -1,12 +1,21 @@
 .modal-form-title {
+  @include font(20px, 700, 30px);
   margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
+
+// .modal-form-title {
+//   margin-bottom: 12px;
+//   font-weight: 700;
+//   font-size: 20px;
+//   line-height: 1.15;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   color: #212121;
+// }
 
 .modal-form-input {
   font-size: 12px;
@@ -82,7 +91,7 @@
 .contact-form-checkbox-label {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 11px;
   line-height: 1.71;
   margin-bottom: 30px;
   color: #757575;
@@ -131,5 +140,11 @@
 
   &:hover {
     background: #188ce8;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form-checkbox-label {
+    font-size: 14px;
   }
 }
